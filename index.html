@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Weather Application | OpenWeatherMap API</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <title>Weather Application | OpenWeatherMap API</title>
+    <link rel="stylesheet" href="css/style.scss" />
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        name="city"
+        value=""
+        placeholder="City Name"
+        id="city-input"
+      />
+      <!-- <input type="submit" value="Get Weather" id="getTemp"> -->
+    </form>
+    <button id="get-data-button">Show me the info</button>
 
-  <form>
-  	<input type="text" name="city" value="" placeholder="city" id="city">
-  	<input type="submit" value="Get Weather" id="getTemp">
-  </form>
+    <!-- Add your code in here -->
+    <div id="display"></div>
 
-  <!-- Add your code in here -->
-
-  <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
-
-</body>
+    <script src="js/main.ts" charset="utf-8" async defer></script>
+  </body>
 </html>
